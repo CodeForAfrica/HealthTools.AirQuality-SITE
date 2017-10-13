@@ -6,11 +6,6 @@
 @import url("owlcarousel.css");
 @import url("uikit.scrollspy.css");
 
-/* ==================================================
-   Icon Fonts
-================================================== */
-
-@import url("fonts/fontawesome/font-awesome.css");
 
 /* ==================================================
    Google Fonts
@@ -75,6 +70,10 @@ a
 	{
 		color: #444;
 	}
+
+img {
+	max-width: 100%;
+}
 
 /* ==================================================
    Default Typography
@@ -396,6 +395,17 @@ h1, h2, h3
 	position: relative;
 	font-size: 18px;
 }
+	#youtubecont .logos
+	{
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+	#youtubecont .logos img
+	{
+		max-width: 350px;
+		max-height: 120px;
+		margin: 10px 25px;
+	}
 		
 #footercont
 {
@@ -414,6 +424,11 @@ h1, h2, h3
 		list-style-type: none;
 		margin: 0 10px;
 	}
+
+		#footercont #socialmedia .fa-lg
+		{
+			font-size: 0.7em;
+		}
 
 		#footercont #socialmedia ul li a
 		{
@@ -458,6 +473,7 @@ h1, h2, h3
 					top: 2px;
 				}
 	.author-2 { font-size:11px; line-height:16px; }
+
 
 /* ==================================================
    Responsive Media Queries - Tablets

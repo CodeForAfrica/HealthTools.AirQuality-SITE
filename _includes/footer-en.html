@@ -4,21 +4,34 @@
       <p class="backtotop"><a href="#backtotop"><span class="fa fa-angle-double-up"></span></a></p>
       <div id="socialmedia" class="clearfix">
         <ul>
-          <li><a href="https://twitter.com/codefors" rel="external" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
-          <li><a href="https://github.com/opendata-stuttgart" rel="external" target="_blank"><span class="fa fa-github-square"></span></a></li>
-          <!--<li><a href="#" rel="external"><span class="fa fa-rss-square"></span></a></li>-->
+          <li><a href="https://twitter.com/{{ site.twitter_username }}" rel="external" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a></li>
+          <li><a href="https://github.com/{{ site.github_username }}" rel="external" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a></li>
+          <li><a href="https://medium.com/{{ site.medium_publication }}" rel="external" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+            </span>
+          </a></li>
         </ul>
       </div>
 
       <p class="author-2">
-        Free Responsive Website Template by
-        <a title="download website templates" href="http://www.downloadwebsitetemplates.co.uk" rel="external" target="_blank">Download Website Templates</a>
-        <br />
-        Icons by
-        <a href="http://fortawesome.github.io/Font-Awesome/" rel="external" target="_blank">Font Awesome</a>
+        Produced in partnership with <a href="https://codeforafrica.org" target="_blank" rel="external">Code for Africa</a> and <a href="https://datazetu.or.tz" target="_blank" rel="external">DataZetu</a>.
+        <br/>
+        Funded by <a href="https://www.pepfar.gov/" target="_blank">PEPFAR</a>, <a href="https://www.mcc.gov/initiatives/initiative/mcc-pepfar-partnership" target="_blank">MCC</a>, and the <a href="http://gatesfoundation.org/" target="_blank">Bill and Melinda Gates Foundation</a>.
       </p>
 
-      <p class="author-2"><a href="{{ "en/impressum.html" | prepend: site.baseurl }}">Impressum</a></p>
+      <!-- <p class="author-2"><a href="{{ "en/impressum.html" | prepend: site.baseurl }}">Impressum</a></p> -->
     </div>
   </div>
 </footer>

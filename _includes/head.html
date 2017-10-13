@@ -4,30 +4,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    {% case page.lang %}
-    {% when 'de' %}
-      <meta name="description" content="{{ site.description.de }}">
-    {% when 'en' %}
-      <meta name="description" content="{{ site.description.en }}">
-    {% else %}
-      <meta name="description" content="{{ site.description.en }}">
-    {% endcase %}
+  
+  {% case page.lang %}
+  {% when 'de' %}
+    <meta name="description" content="{{ site.description.de }}">
+  {% when 'en' %}
+    <meta name="description" content="{{ site.description.en }}">
+  {% else %}
+    <meta name="description" content="{{ site.description.en }}">
+  {% endcase %}
 
   <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">-->
 
-  <meta name="keywords" content="Luftdaten, Feinstaub, Luftqualität, Stuttgart, Umwelt, Verkehr">
+  <meta name="keywords" content="sensors.AFRICA, Code for Africa, Kenya, Nairobi, Nigeria, Lagos, Tanzania, Dar es Salaam, Air Quality, Data, Open Data, South Africa, Cape Town, Luftdaten, Feinstaub, Luftqualität, Stuttgart, Umwelt, Verkehr">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <!-- TODO: Preped site.baseurl -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "images/ico/apple-touch-icon-144.png" | prepend: site.baseurl }}"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ico/favicon-16x16.png">
+  <link rel="manifest" href="/images/ico/manifest.json">
+  <link rel="mask-icon" href="/images/ico/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/ico/favicon.ico">
+  <meta name="msapplication-config" content="/images/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "images/ico/apple-touch-icon-144.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ "images/ico/apple-touch-icon-114.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ "images/ico/apple-touch-icon-72.png" | prepend: site.baseurl }}">
-  <link rel="apple-touch-icon-precomposed" href="{{ "images/ico/apple-touch-icon-57.png" | prepend: site.baseurl }}">
-  <link rel="shortcut icon" href="{{ "images/ico/favicon.png" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!--[if IE]><![endif]-->
   <link rel="stylesheet" href="{{ "css/style.css" | prepend: site.baseurl }}">
   <script src="{{ "js/jquery.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "js/countdown.js" | prepend: site.baseurl }}"></script>
+  <!-- <script src="{{ "js/countdown.js" | prepend: site.baseurl }}"></script> -->
   <script src="{{ "js/owlcarousel.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "js/uikit.scrollspy.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "js/scripts.js" | prepend: site.baseurl }}"></script>
